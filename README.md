@@ -8,7 +8,7 @@ Segue passos e script para implementação do projeto:
 <h3>
  Passos:
  </h3>
-  <li> Implementação do Diagrama de Entidade e Relacionamento</li
+  <li> Implementação do Diagrama de Entidade e Relacionamento (em meu caderno por enquanto) </li>
   <li> Implementação do script de criação do banco de dados</li>
   <li> Elaboração das rotas e seus objetos de retorno (controllers)</li>
   <li> Implementação base da api (arquitetura, separação de camadas, implementação das rotas)</li>
