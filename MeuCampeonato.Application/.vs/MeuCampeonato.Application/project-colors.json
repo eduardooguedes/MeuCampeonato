@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "714dbf33-72bb-40a7-88f5-fdae70530639": {
+      "ProjectGuid": "714dbf33-72bb-40a7-88f5-fdae70530639",
+      "DisplayName": "MeuCampeonato.Application",
+      "ColorIndex": 0
+    },
+    "a254db4a-9ca9-483c-ae43-b62fe45f2cba": {
+      "ProjectGuid": "a254db4a-9ca9-483c-ae43-b62fe45f2cba",
+      "DisplayName": "MeuCampeonato.Infrastructure.Data",
+      "ColorIndex": 1
+    },
+    "d01b58ef-5fb5-40c4-8e62-42b246464ca3": {
+      "ProjectGuid": "d01b58ef-5fb5-40c4-8e62-42b246464ca3",
+      "DisplayName": "MeuCampeonato.Domain",
+      "ColorIndex": 2
+    },
+    "8369c7e3-a25c-4d1c-b684-935bf22bc519": {
+      "ProjectGuid": "8369c7e3-a25c-4d1c-b684-935bf22bc519",
+      "DisplayName": "MeuCampeonato.Services",
+      "ColorIndex": 3
+    },
+    "b7adaca5-79b7-4142-aab9-24ac2781ea0e": {
+      "ProjectGuid": "b7adaca5-79b7-4142-aab9-24ac2781ea0e",
+      "DisplayName": "WebApplication1",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    },
+    "d4c429d0-d34f-4204-8482-2d5c00aa46d8": {
+      "ProjectGuid": "d4c429d0-d34f-4204-8482-2d5c00aa46d8",
+      "DisplayName": "MeuCampeonato.App",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
