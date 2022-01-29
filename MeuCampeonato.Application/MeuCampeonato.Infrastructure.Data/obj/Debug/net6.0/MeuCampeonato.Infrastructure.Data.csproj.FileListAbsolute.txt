@@ -1,0 +1,14 @@
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\bin\Debug\net6.0\MeuCampeonato.Infrastructure.Data.deps.json
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\bin\Debug\net6.0\MeuCampeonato.Infrastructure.Data.dll
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\bin\Debug\net6.0\ref\MeuCampeonato.Infrastructure.Data.dll
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\bin\Debug\net6.0\MeuCampeonato.Infrastructure.Data.pdb
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\obj\Debug\net6.0\MeuCampeonato.Infrastructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\obj\Debug\net6.0\MeuCampeonato.Infrastructure.Data.AssemblyInfoInputs.cache
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\obj\Debug\net6.0\MeuCampeonato.Infrastructure.Data.AssemblyInfo.cs
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\obj\Debug\net6.0\MeuCampeonato.Infrastructure.Data.csproj.CoreCompileInputs.cache
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\obj\Debug\net6.0\MeuCampeonato.Infrastructure.Data.dll
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\obj\Debug\net6.0\ref\MeuCampeonato.Infrastructure.Data.dll
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\obj\Debug\net6.0\MeuCampeonato.Infrastructure.Data.pdb
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\bin\Debug\net6.0\MeuCampeonato.Infrastructure.Data.runtimeconfig.json
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\obj\Debug\net6.0\MeuCampeonato.Infrastructure.Data.genruntimeconfig.cache
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.Data\obj\Debug\net6.0\MeuCampeonato.Infrastructure.Data.csproj.AssemblyReference.cache
