@@ -27,13 +27,9 @@ Segue passos, rotas e script para implementação do projeto:
  POST {{baseurl}}/Times/CadastrarTimes
  
  Rota utilizada para cadastrar times na aplicação. 
- 
  Não há um limite de times para ser cadastrados. 
- 
  Retorna como resposta uma lista de times com id, nome e data/hora de criação.
- 
  Para cadastrar é necessário apenas nome do time.
- 
  Json exemplo:
  
  {
@@ -48,7 +44,6 @@ Segue passos, rotas e script para implementação do projeto:
   <h3>POST {{baseUrl}}/Campeonato/IniciarCampeonato</h3>
  
   Rota que inicia um campeonato a partir de uma lista de times.
- 
   Somente é possivel iniciar um campeonato a partir de uma lista de 8 times.
  
   Json exemplo:
