@@ -49,7 +49,7 @@ Segue passos, rotas e script para implementação do projeto:
  
   Rota que inicia um campeonato a partir de uma lista de times.
  
-  Somente é possivel iniciar um campeonato com uma lista de 8 times.
+  Somente é possivel iniciar um campeonato a partir de uma lista de 8 times.
  
   Json exemplo:
        [
