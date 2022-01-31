@@ -248,6 +248,7 @@ Segue passos, rotas e script para implementação do projeto:
  Executa as partidas da fase em andamento a partir dos jogos sorteados no GET anterior.
  Também avança para a próxima fase.
  Executar o GET anterior para gerar os proximos jogos.
+ 
  Json retorno exemplo:
 
 {
@@ -308,7 +309,8 @@ Segue passos, rotas e script para implementação do projeto:
  
  <h3>GET {{baseUrl}}/Campeonato/{idCampeonato}</h3>
  
- Retorna situacao do campeonato a partir do seu id.
+ Retorna situacao do campeonato a partir do seu id. 
+ 
  Json retorno exemplo:
  
  {
@@ -436,6 +438,7 @@ Segue passos, rotas e script para implementação do projeto:
  Retorna todos os campeonatos já cadastrados. 
  É possivel filtrar por data/hora de inicio dos campeonatos. 
  Nesse caso, apenas campeonatos criados a partir dessa data/hora serão retornados.
+ 
  Json de retorno igual do GET anterior.
    
 
