@@ -24,12 +24,12 @@ Segue passos, rotas e script para implementação do projeto:
  <h3>
  Rotas:
  </h3>
- * POST {{baseurl}}/Times/CadastrarTimes
-   Rota utilizada para cadastrar times na aplicação. 
-   Não há um limite de times para ser cadastrados. 
-   Retorna como resposta uma lista de times com id, nome e data/hora de criação.
-   Para cadastrar é necessário apenas nome do time.
-   Json exemplo:
+ POST {{baseurl}}/Times/CadastrarTimes
+ Rota utilizada para cadastrar times na aplicação. 
+ Não há um limite de times para ser cadastrados. 
+ Retorna como resposta uma lista de times com id, nome e data/hora de criação.
+ Para cadastrar é necessário apenas nome do time.
+ Json exemplo:
      {
         "Id": "",
         "Nome": "Palmeiras"
@@ -39,10 +39,10 @@ Segue passos, rotas e script para implementação do projeto:
         "Nome": "Corinthians"
     }
  
- * POST {{baseUrl}}/Campeonato/IniciarCampeonato
-    Rota que inicia um campeonato a partir de uma lista de times.
-    Somente é possivel iniciar um campeonato com uma lista de 8 times.
-    Json exemplo:
+  POST {{baseUrl}}/Campeonato/IniciarCampeonato
+  Rota que inicia um campeonato a partir de uma lista de times.
+  Somente é possivel iniciar um campeonato com uma lista de 8 times.
+  Json exemplo:
        [
         {
             "Id": "071c39b0-935c-4579-9d6c-f0bd94dbb229"
@@ -69,32 +69,33 @@ Segue passos, rotas e script para implementação do projeto:
             "Id": "448e101b-4729-4f35-bc6f-b232fb2b6416"
         }
        ]
+ 
+ GET {{baseUrl}}/Fases/JogosDaFaseAtual/{idCampeonato}
+ Gera os jogos aleatoriamente para a fase em andamento.
+ Os jogos serão executados no próximo GET.
+ Json retorno exemplo:
+       
+       
+ GET {{baseUrl}}/ExecutarPartidasDaFaseAtual/{idCampeonato}
+ Executa as partidas da fase em andamento a partir dos jogos sorteados no GET anterior.
+ Também avança para a próxima fase.
+ Executar o GET anterior para gerar os proximos jogos.
+ Json retorno exemplo:
+   
+ 
+ GET {{baseUrl}}/Campeonato/{idCampeonato}
+ Retorna situacao do campeonato a partir do seu id.
+ Json retorno exemplo:
 
- * GET {{baseUrl}}/Fases/JogosDaFaseAtual/{idCampeonato}
-    Gera os jogos aleatoriamente para a fase em andamento.
-    Os jogos serão executados no próximo GET.
-    Json retorno exemplo:
-       
-       
- * GET {{baseUrl}}/ExecutarPartidasDaFaseAtual/{idCampeonato}
-   Executa as partidas da fase em andamento a partir dos jogos sorteados no GET anterior.
-   Também avança para a próxima fase.
-   Executar o GET anterior para gerar os proximos jogos.
-   Json retorno exemplo:
+
+
+ GET Campeonatos - Campeonatos/{dataInicio}
+ Retorna todos os campeonatos já cadastrados. 
+ É possivel filtrar por data/hora de inicio dos campeonatos. 
+ Nesse caso, apenas campeonatos criados a partir dessa data/hora serão retornados.
+ Json retorno exemplo:
    
- 
- 
- * GET {{baseUrl}}/Campeonato/{idCampeonato}
-    Retorna situacao do campeonato a partir do seu id.
-    Json retorno exemplo:
-       
- * GET Campeonatos - Campeonatos/{dataInicio}
-    Retorna todos os campeonatos já cadastrados. 
-    É possivel filtrar por data/hora de inicio dos campeonatos. 
-    Nesse caso, apenas campeonatos criados a partir dessa data/hora serão retornados.
-    Json retorno exemplo:
-   
-   
+
  
  <h3>
  Script de criação do banco de dados:
