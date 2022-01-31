@@ -457,6 +457,8 @@ Segue passos, rotas e script para implementação do projeto:
  <h3>
  Script de criação do banco de dados:
  </h3>
+
+
 CREATE TABLE CAMPEONATO
 (
 	ID uniqueidentifier PRIMARY KEY,
