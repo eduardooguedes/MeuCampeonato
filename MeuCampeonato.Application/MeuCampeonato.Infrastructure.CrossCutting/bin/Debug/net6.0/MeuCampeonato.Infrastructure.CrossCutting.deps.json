@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MeuCampeonato.Infrastructure.CrossCutting/1.0.0": {
+        "dependencies": {
+          "MeuCampeonato.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MeuCampeonato.Infrastructure.CrossCutting.dll": {}
+        }
+      },
+      "MeuCampeonato.Domain/1.0.0": {
+        "runtime": {
+          "MeuCampeonato.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MeuCampeonato.Infrastructure.CrossCutting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MeuCampeonato.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

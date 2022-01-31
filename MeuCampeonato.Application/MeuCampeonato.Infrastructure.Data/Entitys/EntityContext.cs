@@ -49,17 +49,27 @@ namespace MeuCampeonato.Infrastructure.Data.Entitys
                     .HasColumnType("datetime")
                     .HasColumnName("DATA_HORA_INICIO");
 
+                entity.Property(e => e.Nome)
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .HasColumnName("NOME");
+
                 entity.Property(e => e.Situacao)
-                    .HasMaxLength(12)
+                    .HasMaxLength(30)
                     .IsUnicode(false)
                     .HasColumnName("SITUACAO");
             });
 
             modelBuilder.Entity<CampeonatoTime>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => new { e.IdCampeonato, e.IdTime })
+                    .HasName("PK_ID_TIME_CAMPEONATO");
 
                 entity.ToTable("CAMPEONATO_TIME");
+
+                entity.Property(e => e.IdCampeonato).HasColumnName("ID_CAMPEONATO");
+
+                entity.Property(e => e.IdTime).HasColumnName("ID_TIME");
 
                 entity.Property(e => e.Colocacao).HasColumnName("COLOCACAO");
 
@@ -67,9 +77,9 @@ namespace MeuCampeonato.Infrastructure.Data.Entitys
                     .HasColumnType("datetime")
                     .HasColumnName("DATA_HORA_INSCRICAO");
 
-                entity.Property(e => e.IdCampeonato).HasColumnName("ID_CAMPEONATO");
+                entity.Property(e => e.GolsFeitos).HasColumnName("GOLS_FEITOS");
 
-                entity.Property(e => e.IdTime).HasColumnName("ID_TIME");
+                entity.Property(e => e.GolsTomados).HasColumnName("GOLS_TOMADOS");
 
                 entity.Property(e => e.JogosGanhos).HasColumnName("JOGOS_GANHOS");
 
@@ -77,14 +87,19 @@ namespace MeuCampeonato.Infrastructure.Data.Entitys
 
                 entity.Property(e => e.Pontuacao).HasColumnName("PONTUACAO");
 
+                entity.Property(e => e.Situacao)
+                    .HasMaxLength(20)
+                    .IsUnicode(false)
+                    .HasColumnName("SITUACAO");
+
                 entity.HasOne(d => d.IdCampeonatoNavigation)
-                    .WithMany()
+                    .WithMany(p => p.CampeonatoTimes)
                     .HasForeignKey(d => d.IdCampeonato)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_CAMPEONATO_TIME");
 
                 entity.HasOne(d => d.IdTimeNavigation)
-                    .WithMany()
+                    .WithMany(p => p.CampeonatoTimes)
                     .HasForeignKey(d => d.IdTime)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_TIME_CAMPEONATO");
@@ -114,6 +129,11 @@ namespace MeuCampeonato.Infrastructure.Data.Entitys
                     .HasColumnName("NOME");
 
                 entity.Property(e => e.QtdeJogos).HasColumnName("QTDE_JOGOS");
+
+                entity.Property(e => e.Situacao)
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .HasColumnName("SITUACAO");
 
                 entity.HasOne(d => d.IdCampeonatoNavigation)
                     .WithMany(p => p.Fases)
@@ -153,6 +173,10 @@ namespace MeuCampeonato.Infrastructure.Data.Entitys
                 entity.Property(e => e.Id)
                     .ValueGeneratedNever()
                     .HasColumnName("ID");
+
+                entity.Property(e => e.DataHoraCriado)
+                    .HasColumnType("datetime")
+                    .HasColumnName("DATA_HORA_CRIADO");
 
                 entity.Property(e => e.GolsFeitos).HasColumnName("GOLS_FEITOS");
 

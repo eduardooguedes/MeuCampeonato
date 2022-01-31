@@ -35,7 +35,12 @@
       "ProjectGuid": "d4c429d0-d34f-4204-8482-2d5c00aa46d8",
       "DisplayName": "MeuCampeonato.App",
       "ColorIndex": 5
+    },
+    "120d032c-ae3c-4241-9fd7-114ecc065c3e": {
+      "ProjectGuid": "120d032c-ae3c-4241-9fd7-114ecc065c3e",
+      "DisplayName": "MeuCampeonato.Infrastructure.CrossCutting",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

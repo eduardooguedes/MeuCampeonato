@@ -1,0 +1,15 @@
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\bin\Debug\net6.0\MeuCampeonato.Infrastructure.CrossCutting.deps.json
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\bin\Debug\net6.0\MeuCampeonato.Infrastructure.CrossCutting.dll
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\bin\Debug\net6.0\ref\MeuCampeonato.Infrastructure.CrossCutting.dll
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\bin\Debug\net6.0\MeuCampeonato.Infrastructure.CrossCutting.pdb
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\obj\Debug\net6.0\MeuCampeonato.Infrastructure.CrossCutting.csproj.AssemblyReference.cache
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\obj\Debug\net6.0\MeuCampeonato.Infrastructure.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\obj\Debug\net6.0\MeuCampeonato.Infrastructure.CrossCutting.AssemblyInfoInputs.cache
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\obj\Debug\net6.0\MeuCampeonato.Infrastructure.CrossCutting.AssemblyInfo.cs
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\obj\Debug\net6.0\MeuCampeonato.Infrastructure.CrossCutting.csproj.CoreCompileInputs.cache
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\obj\Debug\net6.0\MeuCampeonato.Infrastructure.CrossCutting.dll
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\obj\Debug\net6.0\ref\MeuCampeonato.Infrastructure.CrossCutting.dll
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\obj\Debug\net6.0\MeuCampeonato.Infrastructure.CrossCutting.pdb
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\bin\Debug\net6.0\MeuCampeonato.Domain.dll
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\bin\Debug\net6.0\MeuCampeonato.Domain.pdb
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Infrastructure.CrossCutting\obj\Debug\net6.0\MeuCampeonato.Infrastructure.CrossCutting.csproj.CopyComplete

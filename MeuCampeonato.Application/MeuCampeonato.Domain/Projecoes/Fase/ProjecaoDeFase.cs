@@ -9,10 +9,11 @@ namespace MeuCampeonato.Domain.Projecoes.Fase
 {
     public class ProjecaoDeFase
     {
-        public Guid Id { get; set; }
+        public string IdFase { get; set; }
         public string Nome { get; set; } = null!;
         public int QtdeJogos { get; set; }
-        public DateTime DataHoraInicio { get; set; }
+        public string Situacao { get; set; }
+        public DateTime? DataHoraInicio { get; set; }
         public DateTime? DataHoraFim { get; set; }
         public List<ProjecaoDeJogo> Jogos { get; set; }
     }

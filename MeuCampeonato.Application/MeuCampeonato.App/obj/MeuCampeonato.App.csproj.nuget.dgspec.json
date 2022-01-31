@@ -27,6 +27,105 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Services\\MeuCampeonato.Services.csproj": {
+                "projectPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Services\\MeuCampeonato.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Domain\\MeuCampeonato.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Domain\\MeuCampeonato.Domain.csproj",
+        "projectName": "MeuCampeonato.Domain",
+        "projectPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Domain\\MeuCampeonato.Domain.csproj",
+        "packagesPath": "C:\\Users\\emace\\.nuget\\packages\\",
+        "outputPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -50,9 +149,203 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Infrastructure.CrossCutting\\MeuCampeonato.Infrastructure.CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Infrastructure.CrossCutting\\MeuCampeonato.Infrastructure.CrossCutting.csproj",
+        "projectName": "MeuCampeonato.Infrastructure.CrossCutting",
+        "projectPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Infrastructure.CrossCutting\\MeuCampeonato.Infrastructure.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\emace\\.nuget\\packages\\",
+        "outputPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Infrastructure.CrossCutting\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Domain\\MeuCampeonato.Domain.csproj": {
+                "projectPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Domain\\MeuCampeonato.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Infrastructure.Data\\MeuCampeonato.Infrastructure.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Infrastructure.Data\\MeuCampeonato.Infrastructure.Data.csproj",
+        "projectName": "MeuCampeonato.Infrastructure.Data",
+        "projectPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Infrastructure.Data\\MeuCampeonato.Infrastructure.Data.csproj",
+        "packagesPath": "C:\\Users\\emace\\.nuget\\packages\\",
+        "outputPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Infrastructure.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Domain\\MeuCampeonato.Domain.csproj": {
+                "projectPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Domain\\MeuCampeonato.Domain.csproj"
+              },
+              "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Infrastructure.CrossCutting\\MeuCampeonato.Infrastructure.CrossCutting.csproj": {
+                "projectPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Infrastructure.CrossCutting\\MeuCampeonato.Infrastructure.CrossCutting.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Services\\MeuCampeonato.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Services\\MeuCampeonato.Services.csproj",
+        "projectName": "MeuCampeonato.Services",
+        "projectPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Services\\MeuCampeonato.Services.csproj",
+        "packagesPath": "C:\\Users\\emace\\.nuget\\packages\\",
+        "outputPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\emace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Infrastructure.Data\\MeuCampeonato.Infrastructure.Data.csproj": {
+                "projectPath": "D:\\projetos\\MeuCampeonato\\MeuCampeonato.Application\\MeuCampeonato.Infrastructure.Data\\MeuCampeonato.Infrastructure.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

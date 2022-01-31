@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MeuCampeonato.Services.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MeuCampeonato.Application.Controllers.Fases
@@ -6,21 +7,30 @@ namespace MeuCampeonato.Application.Controllers.Fases
     [Route("Fases")]
     [ApiController]
     public class FasesController : ControllerBase
-    {   
+    {
+        private readonly IFaseService _faseService;
+        public FasesController(IFaseService faseService)
+        {
+            _faseService = faseService;
+        }
+
         /// <summary>
         /// Retorna o chaveamento de jogos da fase.
         /// </summary>
         /// <param name="idCampeonato"></param>
         /// <returns></returns>
-        [Route("JogosDaFase/{idCampeonato}")]
+        [Route("JogosDaFaseAtual/{idCampeonato}")]
         [HttpGet]
-        public async Task<IActionResult> GetJogosDaFase(int idCampeonato)
+        public async Task<IActionResult> GetJogosDaFase([FromRoute] Guid idCampeonato)
         {
             try
             {
-                //servico
+                var jogosDaFase = await _faseService.GetJogosDaFaseEmAndamento(idCampeonato);
 
-                return Ok(new { });
+                if (jogosDaFase == null)
+                    return StatusCode(500, "Nenhuma fase em andamento. Campeonato finalizado.");
+
+                return Ok(new { data = jogosDaFase });
             }
             catch (Exception ex)
             { 
@@ -33,15 +43,15 @@ namespace MeuCampeonato.Application.Controllers.Fases
         /// </summary>
         /// <param name="idCampeonato"></param>
         /// <returns></returns>
-        [Route("PartidasDaFase/{idCampeonato}")]
+        [Route("ExecutarPartidasDaFaseAtual/{idCampeonato}")]
         [HttpGet]
-        public async Task<IActionResult> GetPartidasDaFase(int idCampeonato)
+        public async Task<IActionResult> GetPartidasDaFase(Guid idCampeonato)
         {
             try
             {
-                //servico
+                var partidasRealizadas = _faseService.ExecutarPartidasDaFase(idCampeonato);
 
-                return Ok(new { });
+                return Ok(new { data = partidasRealizadas});
             }
             catch (Exception ex)
             {

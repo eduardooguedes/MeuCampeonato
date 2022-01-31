@@ -8,6 +8,7 @@ namespace MeuCampeonato.Infrastructure.CrossCutting.Enum
 {
     public enum EnumSituacaoTime
     {
-
+        Eliminado = 0,
+        Jogando = 1
     }
 }

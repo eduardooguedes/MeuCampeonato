@@ -8,10 +8,10 @@ namespace MeuCampeonato.Domain.Projecoes.Jogo
 {
     public class ProjecaoDeJogo
     {
-        public Guid Id { get; set; }
-        public Guid? IdFase { get; set; }
-        public Guid IdTime1 { get; set; }
-        public Guid IdTime2 { get; set; }
+        public string Id { get; set; }
+        public string IdFase { get; set; }
+        public string IdTime1 { get; set; }
+        public string IdTime2 { get; set; }
         public int GolsTime1 { get; set; }
         public int GolsTime2 { get; set; }
     }

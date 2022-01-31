@@ -8,8 +8,16 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeuCampeonato.Domain", "MeuCampeonato.Domain\MeuCampeonato.Domain.csproj", "{D01B58EF-5FB5-40C4-8E62-42B246464CA3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeuCampeonato.Services", "MeuCampeonato.Services\MeuCampeonato.Services.csproj", "{8369C7E3-A25C-4D1C-B684-935BF22BC519}"
+	ProjectSection(ProjectDependencies) = postProject
+		{120D032C-AE3C-4241-9FD7-114ECC065C3E} = {120D032C-AE3C-4241-9FD7-114ECC065C3E}
+		{D01B58EF-5FB5-40C4-8E62-42B246464CA3} = {D01B58EF-5FB5-40C4-8E62-42B246464CA3}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeuCampeonato.App", "MeuCampeonato.App\MeuCampeonato.App.csproj", "{D4C429D0-D34F-4204-8482-2D5C00AA46D8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8369C7E3-A25C-4D1C-B684-935BF22BC519} = {8369C7E3-A25C-4D1C-B684-935BF22BC519}
+		{D01B58EF-5FB5-40C4-8E62-42B246464CA3} = {D01B58EF-5FB5-40C4-8E62-42B246464CA3}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeuCampeonato.Infrastructure.CrossCutting", "MeuCampeonato.Infrastructure.CrossCutting\MeuCampeonato.Infrastructure.CrossCutting.csproj", "{120D032C-AE3C-4241-9FD7-114ECC065C3E}"
 EndProject

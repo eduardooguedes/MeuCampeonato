@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MeuCampeonato.Domain.DTOs.Time;
+using MeuCampeonato.Services.Interfaces;
+using MeuCampeonato.Services.TimeService;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MeuCampeonato.Application.Controllers.Times
@@ -7,21 +10,26 @@ namespace MeuCampeonato.Application.Controllers.Times
     [ApiController]
     public class TimeController : ControllerBase
     {
+        private readonly ITimeService _timeService;
+        public TimeController(ITimeService timeService)
+        {
+            _timeService = timeService;
+        }
 
         /// <summary>
         /// Cadastra uma lista de times.
         /// </summary>
         /// <param name="times"></param>
         /// <returns></returns>
-        [Route("CadastrarTimes")]
         [HttpPost]
-        public async Task<IActionResult> PostTimes(List<dynamic> times)
+        [Route("CadastrarTimes")]
+        public async Task<IActionResult> PostTimes(List<DtoDeTime> times)
         {
             try
-            {   
-                //servico 
+            {
+                var timesCadastrados = _timeService.PostTimes(times); 
 
-                return Ok(new { });
+                return Ok(new { data = timesCadastrados });
             }
             catch (Exception ex)
             {

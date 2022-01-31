@@ -11,7 +11,10 @@ namespace MeuCampeonato.Infrastructure.Data.Entitys
         public int? Colocacao { get; set; }
         public int JogosGanhos { get; set; }
         public int JogosPerdidos { get; set; }
+        public int GolsFeitos { get; set; }
+        public int GolsTomados { get; set; }
         public DateTime DataHoraInscricao { get; set; }
+        public string Situacao { get; set; } = null!;
 
         public virtual Campeonato IdCampeonatoNavigation { get; set; } = null!;
         public virtual Time IdTimeNavigation { get; set; } = null!;

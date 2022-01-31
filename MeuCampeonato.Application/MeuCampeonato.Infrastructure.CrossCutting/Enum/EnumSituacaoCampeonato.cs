@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace MeuCampeonato.Infrastructure.CrossCutting.Enum
 {
-    public enum EnumSituacaoCampeonato
-    {
-
-    }
+	public enum EnumSituacaoCampeonato
+	{
+		EmAndamento = 0,
+		Finalizado = 1
+	}
 }
