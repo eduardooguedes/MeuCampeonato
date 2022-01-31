@@ -65,10 +65,8 @@ Segue passos, rotas e script para implementação do projeto:
  
  <h3>GET {{baseUrl}}/Fases/JogosDaFaseAtual/{idCampeonato}</h3>
 
- Gera os jogos aleatoriamente para a fase em andamento.
- 
+ Gera os jogos aleatoriamente para a fase em andamento. 
  Os jogos serão executados no próximo GET.
- 
  Json retorno exemplo:
  
  {
@@ -248,11 +246,8 @@ Segue passos, rotas e script para implementação do projeto:
  <h3>GET {{baseUrl}}/ExecutarPartidasDaFaseAtual/{idCampeonato}</h3>
  
  Executa as partidas da fase em andamento a partir dos jogos sorteados no GET anterior.
- 
  Também avança para a próxima fase.
- 
  Executar o GET anterior para gerar os proximos jogos.
- 
  Json retorno exemplo:
 
 {
@@ -314,7 +309,6 @@ Segue passos, rotas e script para implementação do projeto:
  <h3>GET {{baseUrl}}/Campeonato/{idCampeonato}</h3>
  
  Retorna situacao do campeonato a partir do seu id.
- 
  Json retorno exemplo:
  
  {
@@ -440,11 +434,8 @@ Segue passos, rotas e script para implementação do projeto:
  <h3>GET Campeonatos - Campeonatos/{dataInicio}</h3>
  
  Retorna todos os campeonatos já cadastrados. 
- 
  É possivel filtrar por data/hora de inicio dos campeonatos. 
- 
  Nesse caso, apenas campeonatos criados a partir dessa data/hora serão retornados.
- 
  Json de retorno igual do GET anterior.
    
 
