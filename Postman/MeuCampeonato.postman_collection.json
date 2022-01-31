@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "1dcabd8c-e87f-4d52-ba86-74dada61529a",
+		"name": "MeuCampeonato",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Time",
+			"item": [
+				{
+					"name": "Cadastrar Times",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"Id\": \"\",\r\n        \"Nome\": \"Eduardo Futebol Clube 4\"\r\n    },\r\n    {\r\n        \"Id\": \"\",\r\n        \"Nome\": \"Guedes Futebol Clube 4\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ip_api}}times/cadastrarTimes",
+							"host": [
+								"{{ip_api}}times"
+							],
+							"path": [
+								"cadastrarTimes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Campeonato",
+			"item": [
+				{
+					"name": "IniciarCampeonato",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"Id\": \"071c39b0-935c-4579-9d6c-f0bd94dbb229\"\r\n    },\r\n    {\r\n        \"Id\": \"66292710-586e-4dd6-baef-45daebf52dd4\"\r\n    },\r\n    {\r\n        \"Id\": \"9f90dcd6-428b-43d1-8677-2d98c03a1723\"\r\n    },\r\n    {\r\n        \"Id\": \"f17bb88a-6b20-47b1-a1b2-3efcfac5857a\"\r\n    },\r\n    {\r\n        \"Id\": \"06e699aa-ef40-4c27-bbf6-1ec797509822\"\r\n    },\r\n    {\r\n        \"Id\": \"18e9ad20-0bee-4879-aa2e-49de0f11a186\"\r\n    },\r\n    {\r\n        \"Id\": \"e3811160-3eaf-4cc6-a1ad-1cb7125da92a\"\r\n    },\r\n    {\r\n        \"Id\": \"448e101b-4729-4f35-bc6f-b232fb2b6416\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ip_api}}Campeonato/IniciarCampeonato",
+							"host": [
+								"{{ip_api}}Campeonato"
+							],
+							"path": [
+								"IniciarCampeonato"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET SituacaoCampeonato por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ip_api}}Campeonato/Campeonato/895E34F6-41B4-4165-BB0D-7BF1D636CC3C",
+							"host": [
+								"{{ip_api}}Campeonato"
+							],
+							"path": [
+								"Campeonato",
+								"895E34F6-41B4-4165-BB0D-7BF1D636CC3C"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Campeonatos/{dataInicio=null}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ip_api}}Campeonato/Campeonatos",
+							"host": [
+								"{{ip_api}}Campeonato"
+							],
+							"path": [
+								"Campeonatos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fase",
+			"item": []
+		},
+		{
+			"name": "GET JogosDaFaseAtual/{idCampeonato}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_api}}Fases/JogosDaFaseAtual/895E34F6-41B4-4165-BB0D-7BF1D636CC3C",
+					"host": [
+						"{{ip_api}}Fases"
+					],
+					"path": [
+						"JogosDaFaseAtual",
+						"895E34F6-41B4-4165-BB0D-7BF1D636CC3C"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /ExecutarPartidasDaFase/{idCampeonato}^",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip_api}}Fases/ExecutarPartidasDaFaseAtual/895E34F6-41B4-4165-BB0D-7BF1D636CC3C",
+					"host": [
+						"{{ip_api}}Fases"
+					],
+					"path": [
+						"ExecutarPartidasDaFaseAtual",
+						"895E34F6-41B4-4165-BB0D-7BF1D636CC3C"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
