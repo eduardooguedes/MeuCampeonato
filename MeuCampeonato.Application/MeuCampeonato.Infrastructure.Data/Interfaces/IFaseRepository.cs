@@ -9,7 +9,7 @@ namespace MeuCampeonato.Infrastructure.Data.Interfaces
 {
     public interface IFaseRepository
     {
-        Task<ProjecaoDeFase> GetJogosDaFase(Guid idCampeonato);
+        Task<ProjecaoDeFase> GetJogosDaFase(ProjecaoDeFase fase);
         Task<ProjecaoDeFase> GetPartidasRealizadasNaFase(Guid idCampeonato);
         Task<ICollection<ProjecaoDeFase>> PostFasesAoCampeonato(Guid idCampeonato);
         Task<ProjecaoDeFase> PutAvancarFaseDoCampeonato(Guid idCampeonato);

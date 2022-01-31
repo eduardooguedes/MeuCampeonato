@@ -33,14 +33,14 @@ namespace MeuCampeonato.Services.FaseService
 
             var jogos = await _jogoService.PostEscalaDeJogosDaFase(times, fase);
 
-            return await _faseRepository.GetJogosDaFase(Guid.Parse(fase.IdFase));
+            return await _faseRepository.GetJogosDaFase(fase);
         }
 
         public async Task<ProjecaoDeFase> ExecutarPartidasDaFase(Guid idCampeonato)
         {
             var fase = await _faseRepository.GetFaseEmAndamento(idCampeonato);
 
-            var jogosFase = await _faseRepository.GetJogosDaFase(Guid.Parse(fase.IdFase));
+            var jogosFase = await _faseRepository.GetJogosDaFase(fase);
 
             if (jogosFase.Jogos == null || !jogosFase.Jogos.Any())
                 throw new Exception("Nenhum jogo para essa fase. Por favor, utilize a rota GET /Fases/JogosDaFaseAtual/{idCampeonato} para gerar os jogos.");

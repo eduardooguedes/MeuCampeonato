@@ -71,3 +71,4 @@ D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.App\obj\Debug\
 D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.App\obj\Debug\net6.0\ref\MeuCampeonato.App.dll
 D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.App\obj\Debug\net6.0\MeuCampeonato.App.pdb
 D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.App\obj\Debug\net6.0\MeuCampeonato.App.genruntimeconfig.cache
+D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.App\obj\Debug\net6.0\MeuCampeonato.App.MvcApplicationPartsAssemblyInfo.cs

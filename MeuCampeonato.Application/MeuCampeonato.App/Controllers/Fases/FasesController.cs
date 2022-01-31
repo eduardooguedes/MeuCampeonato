@@ -49,7 +49,7 @@ namespace MeuCampeonato.Application.Controllers.Fases
         {
             try
             {
-                var partidasRealizadas = _faseService.ExecutarPartidasDaFase(idCampeonato);
+                var partidasRealizadas = await _faseService.ExecutarPartidasDaFase(idCampeonato);
 
                 return Ok(new { data = partidasRealizadas});
             }

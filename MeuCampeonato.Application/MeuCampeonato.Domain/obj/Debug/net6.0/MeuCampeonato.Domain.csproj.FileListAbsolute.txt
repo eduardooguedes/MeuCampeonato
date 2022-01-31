@@ -9,4 +9,3 @@ D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Domain\obj\Deb
 D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Domain\obj\Debug\net6.0\MeuCampeonato.Domain.dll
 D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Domain\obj\Debug\net6.0\ref\MeuCampeonato.Domain.dll
 D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Domain\obj\Debug\net6.0\MeuCampeonato.Domain.pdb
-D:\projetos\MeuCampeonato\MeuCampeonato.Application\MeuCampeonato.Domain\obj\Debug\net6.0\MeuCampeonato.Domain.csproj.AssemblyReference.cache

@@ -14,6 +14,6 @@ namespace MeuCampeonato.Infrastructure.Data.Interfaces
         Task<ICollection<DtoDeTime>> PostTimes(List<DtoDeTime> times);
         Task<ICollection<ProjecaoDeSituacaoDeTimeNoCampeonato>> GetTimesNoCampeonato(Guid idCampeonato);
         Task<ICollection<ProjecaoDeSituacaoDeTimeNoCampeonato>> GetTimesNoCampeonato(List<string> times, Guid idCampeonato);
-        Task<ICollection<ProjecaoDeSituacaoDeTimeNoCampeonato>> PutTimeNoCampeonato(ICollection<ProjecaoDeSituacaoDeTimeNoCampeonato> jogos, Guid idCampeonato);
+        Task<ICollection<ProjecaoDeSituacaoDeTimeNoCampeonato>> PutTimesNoCampeonato(ICollection<string> listaTimes, Guid idCampeonato, List<ProjecaoDeJogo> jogos);
     }
 }

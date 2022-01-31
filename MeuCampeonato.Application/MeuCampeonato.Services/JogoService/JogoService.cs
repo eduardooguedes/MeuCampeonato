@@ -22,7 +22,7 @@ namespace MeuCampeonato.Services.JogoService
                                 select time.IdTime).ToList();
 
             if (timesJogando.Count != (fase.QtdeJogos*2))
-                throw new Exception($"A quantidade de times jogando é maior do que a quantidade de jogos esperadas para essa fase. Qtde times: {timesJogando.Count}. Qtde jogos: {fase.QtdeJogos}");
+                throw new Exception($"A quantidade de times jogando é maior do que o esperado para essa fase. Qtde times: {timesJogando.Count}. Qtde jogos: {fase.QtdeJogos}");
 
             var jogosChaveados = ResolvedorDeJogos.ChavearJogosSorteados(timesJogando, fase.QtdeJogos);
 

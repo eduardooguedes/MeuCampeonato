@@ -51,7 +51,7 @@ namespace MeuCampeonato.Infrastructure.CrossCutting.Resolvedores
         }
 
 
-        public static ICollection<ProjecaoDeSituacaoDeTimeNoCampeonato> DefinirSituacaoTimes(
+        public static ICollection<ProjecaoDeSituacaoDeTimeNoCampeonato> DefinirSituacaoTimesFase(
             List<ProjecaoDeJogo> jogos, ICollection<ProjecaoDeSituacaoDeTimeNoCampeonato> times)
         {
             foreach (var jogo in jogos)

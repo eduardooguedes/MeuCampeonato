@@ -31,11 +31,7 @@ namespace MeuCampeonato.Services.TimeService
             listaDosTimes.AddRange(jogos.Select(j => j.IdTime1.ToString()).ToList());
             listaDosTimes.AddRange(jogos.Select(j => j.IdTime2.ToString()).ToList());
 
-            var timesNoCampeonato = await _timeRepository.GetTimesNoCampeonato(listaDosTimes, idCampeonato);
-
-            timesNoCampeonato = ResolvedorDeJogos.DefinirSituacaoTimes(jogos, timesNoCampeonato);
-
-            return await _timeRepository.PutTimeNoCampeonato(timesNoCampeonato, idCampeonato);
+            return await _timeRepository.PutTimesNoCampeonato(listaDosTimes, idCampeonato, jogos);
         }
     }
 }

@@ -98,31 +98,54 @@ namespace MeuCampeonato.Infrastructure.Data.Repositories.Time
             }
         }
 
-        public async Task<ICollection<ProjecaoDeSituacaoDeTimeNoCampeonato>> PutTimeNoCampeonato(
-            ICollection<ProjecaoDeSituacaoDeTimeNoCampeonato> times, Guid idCampeonato)
+        public async Task<ICollection<ProjecaoDeSituacaoDeTimeNoCampeonato>> PutTimesNoCampeonato(
+            ICollection<string> listaTimes, Guid idCampeonato, List<ProjecaoDeJogo> jogos)
         {
             try
             {
-                var timesNoCampeonato = new List<Entitys.CampeonatoTime>();
-                foreach (var time in times)
+                var timesNoCampeonato = _context.CampeonatoTimes
+                     .AsEnumerable()
+                     .Where(t => listaTimes.Contains(t.IdTime.ToString()) &&
+                             t.IdCampeonato == idCampeonato).ToList();
+
+                var situacaoDosTimes = new List<ProjecaoDeSituacaoDeTimeNoCampeonato>();
+
+                foreach (var time in timesNoCampeonato)
                 {
-                    timesNoCampeonato.Add(new CampeonatoTime()
+                    situacaoDosTimes.Add(new ProjecaoDeSituacaoDeTimeNoCampeonato()
                     {
-                        IdCampeonato = idCampeonato,
+                        IdTime = time.IdTime.ToString(),
                         Colocacao = time.Colocacao,
                         DataHoraInscricao = time.DataHoraInscricao,
-                        IdTime = Guid.Parse(time.IdTime),
-                        JogosGanhos = time.JogosGanhos,
-                        JogosPerdidos = time.JogosPerdidos,
                         GolsFeitos = time.GolsFeitos,
                         GolsTomados = time.GolsTomados,
+                        JogosGanhos = time.JogosGanhos,
+                        JogosPerdidos = time.JogosPerdidos,
                         Pontuacao = time.Pontuacao,
                         Situacao = time.Situacao
                     });
                 }
 
+                var timesAtualizados = ResolvedorDeJogos.DefinirSituacaoTimesFase(jogos, situacaoDosTimes);
+
+                foreach (var time in timesNoCampeonato)
+                {
+                    var t = timesAtualizados.Where(t => t.IdTime == time.IdTime.ToString()).FirstOrDefault();
+                    if (t != null)
+                    {
+                        time.GolsFeitos += t.GolsFeitos;
+                        time.GolsTomados += t.GolsTomados;
+                        time.JogosGanhos += t.JogosGanhos;
+                        time.JogosPerdidos += t.JogosPerdidos;
+                        time.Colocacao = t.Colocacao;
+                        time.Situacao = t.Situacao;
+                        time.Pontuacao += t.Pontuacao;
+                    }
+                }
+
+                _context.CampeonatoTimes.UpdateRange(timesNoCampeonato);
                 await _context.SaveChangesAsync();
-                return times;
+                return timesAtualizados;
             }
             catch (Exception ex)
             {

@@ -52,41 +52,24 @@ namespace MeuCampeonato.Infrastructure.Data.Repositories.Fase
             }
         }
 
-        public async Task<ProjecaoDeFase> GetJogosDaFase(Guid idFase)
+        public async Task<ProjecaoDeFase> GetJogosDaFase(ProjecaoDeFase fase)
         {
             try
             {
-                var fase = _context.Fases.Where(f => f.Id == idFase && f.Situacao == "Em andamento").FirstOrDefault();
+                var jogos = _context.JogosFases.Where(j => j.IdFase == Guid.Parse(fase.IdFase)).ToList();
 
-                if (fase!=null)
-                {
-                    var jogos = _context.JogosFases.Where(j => j.IdFase == fase.Id).ToList();
+                fase.Jogos = (from jogo in jogos
+                              select new ProjecaoDeJogo()
+                              {
+                                  Id = jogo.Id.ToString(),
+                                  IdFase = fase.IdFase.ToString(),
+                                  IdTime1 = jogo.IdTime1.ToString(),
+                                  IdTime2 = jogo.IdTime2.ToString(),
+                                  GolsTime1 = jogo.GolsTime1,
+                                  GolsTime2= jogo.GolsTime2,
+                              }).ToList();
 
-                    var projecaoFase = new ProjecaoDeFase()
-                    {
-                        IdFase = fase.Id.ToString(),
-                        Nome = fase.Nome,
-                        Situacao = fase.Situacao,
-                        DataHoraInicio = fase.DataHoraInicio,
-                        QtdeJogos = fase.QtdeJogos,
-                        DataHoraFim = fase.DataHoraFim,
-                        Jogos = (from jogo in jogos
-                                 select new ProjecaoDeJogo()
-                                 {
-                                     Id = jogo.Id.ToString(),
-                                     IdFase = fase.Id.ToString(),
-                                     IdTime1 = jogo.IdTime1.ToString(),
-                                     IdTime2 = jogo.IdTime2.ToString(),
-                                     GolsTime1 = jogo.GolsTime1,
-                                     GolsTime2= jogo.GolsTime2,
-                                 }).ToList(),
-                    };
-
-                    jogos.Clear();
-                    return projecaoFase;
-                }
-
-                return null;
+                return fase;
             }
             catch (Exception ex)
             {
